@@ -62,6 +62,7 @@
 /src/makeextents
 /src/metaperf
 /src/mmapcat
+/src/mmap_cmtime
 /src/multi_open_unlink
 /src/nametest
 /src/nsexec

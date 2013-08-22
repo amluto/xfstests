@@ -1,0 +1,60 @@
+QA output created by 319
+
+test_basic
+Write page 0
+munmap
+
+test_write_twice
+Write page 0
+Write page 0
+munmap
+
+test_write_twice_sync(0)
+Write page 0
+Write page 0
+fsync
+munmap
+
+test_write_twice_sync(1)
+Write page 0
+Write page 0
+MS_SYNC one byte
+munmap
+
+test_write_twice_sync(2)
+Write page 0
+Write page 0
+MS_SYNC entire mapping byte
+munmap
+
+test_write_twice_sync(3)
+Write page 0
+Write page 0
+MS_ASYNC one byte
+munmap
+
+test_write_twice_sync(4)
+Write page 0
+Write page 0
+MS_ASYNC entire mapping byte
+munmap
+
+test_write_twice_sync(5)
+Write page 0
+Write page 0
+fdatasync
+munmap
+
+test_write_twice_sync(6)
+Write page 0
+Write page 0
+sync_file_range one byte
+munmap
+
+test_two_pages
+Write page 0
+Write page 1
+Write page 1
+munmap
+
+Passed!
